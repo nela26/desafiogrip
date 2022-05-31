@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,300;0,500;1,900 & display=swap');
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    max-height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'menu section section section section section' 'footer footer footer footer footer footer';
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(31, 3, 50);
+    color: white;
+    text-align: center;
+}
+
+menu {
+    grid-area: menu;
+    background-color: rgb(183, 146, 232);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0;
+}
+
+section {
+    grid-area: section;
+    background-color: rgb(187, 255, 147);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+button {
+    text-align: center;
+    font-size: 1em;
+    width: 250px;
+    background-color: rgb(70, 16, 106);
+    height: 35px;
+    color: aliceblue;
+    border: 0ch;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(81, 11, 11);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+}
+
+p {
+    text-align: center;
+    font-size: 1em;
+    text-align: center;
+    align-items: center;
+}
+
+span {
+    font-size: 12px;
+    color: rgba(88, 87, 87, 0.845);
+}
+
+.cantidad {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(88, 87, 87, 0.871);
+}
+
+.obj {
+    height: 250px;
+    width: 250px;
+    margin: 0px;
+    text-align: center;
+    background-color: turquoise;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    background-color: rgba(207, 213, 31, 0.793);
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(31, 3, 50);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
